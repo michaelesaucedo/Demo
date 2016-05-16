@@ -1,0 +1,8 @@
+<div class="page-header">
+   <h1><gravatar email="note.user.email"></gravatar>{{note.title}} <a href="" ng-click="deleteNote(note)" class="btn btn-danger">Delete</a></h1><br>
+   by: <small>{{note.user.name}}</small>
+</div>
+<p>{{note.content}}</p>
+<p><span class="label label-info">{{note.category.name}}</span></p>
+<a ng-href="#/notes/{{note.id}}/edit" class="btn btn-success">Edit Note</a>
+<a href="#/notes" class="btn btn-default">Back</a>
